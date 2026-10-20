@@ -24,7 +24,7 @@ double CustomItem::getPrice() {
 std::string CustomItem::composeItem() {
     std::ostringstream out;
     out << "Custom Size: " << size << std::endl;
-    out << "Toppings: " << std::endl;
+    out << "Toppings:" << std::endl;
     for (const auto& t : toppings) {
         out << t.first << ": " << t.second << " oz" << std::endl;
     }
